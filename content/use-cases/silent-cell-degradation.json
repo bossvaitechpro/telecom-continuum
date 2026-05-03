@@ -13,7 +13,7 @@
     "L4": "Autonomous system detects, heals, and validates — before any human is aware."
   },
   "economicOutcome": "Churn prevented in affected cell area before subscriber notices degradation.",
-  "economicCalculation": "At Tele2 Sweden scale: 1,000 such events/month × avg €28 ARPU × 12 months = €336K annual churn prevention.",
+  "economicCalculation": "At a mid-size European MNO scale: 1,000 such events/month × avg €28 ARPU × 12 months = €336K annual churn prevention.",
   "combinationUpgrade": "Combine with Emblasoft nScan (passive probe, F2) to identify which specific subscribers were affected and their ARPU value — enabling economic prioritisation of the response.",
   "slug": "silent-cell-degradation",
   "dateAdded": "2024-01-15"
