@@ -5,7 +5,7 @@
   "type": "solo",
   "laws": ["law-iii"],
   "functions": ["f7"],
-  "tools": ["radcom-ace"],
+  "tools": ["emblasoft-nscan"],
   "autonomyLevels": {
     "L1": "Revenue assurance team reviews exception report. Manual reconciliation with BSS.",
     "L2": "Automated flagging of unbilled sessions. Reconciliation queue created.",
@@ -14,7 +14,7 @@
   },
   "economicOutcome": "Unbilled data sessions identified and recovered. Systematic billing gap closed.",
   "economicCalculation": "3% leakage on €10M monthly data revenue = €300K/month unrecovered. Annual: €3.6M. Passive probe cost: fraction of leakage recovered in first quarter.",
-  "combinationUpgrade": "Combine with active probe (EXFO Evolver) to confirm that service was actually delivered before raising billing correction — avoiding false recovery on genuinely failed sessions.",
+  "combinationUpgrade": "Combine with Emblasoft Evolver (active probe) to confirm that service was actually delivered before raising billing correction — avoiding false recovery on genuinely failed sessions.",
   "slug": "revenue-leakage-identification",
   "dateAdded": "2024-01-15"
 }

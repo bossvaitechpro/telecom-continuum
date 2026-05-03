@@ -1,16 +1,16 @@
 {
-  "id": "ookla-for-networks",
-  "name": "Ookla for Networks",
-  "vendor": "Ookla",
-  "type": "crowdsourced",
-  "description": "Crowdsourced network intelligence platform aggregating billions of Speedtest measurements to provide competitive benchmarking and coverage insights at scale.",
-  "howItWorks": "Ookla aggregates opt-in performance measurements from the Speedtest app — hundreds of millions of monthly tests. Operators access this data through the Ookla for Networks portal, filtered by geography, time period, device type, and operator. The result is a continuous, large-scale view of how every operator performs in every geography from real subscriber devices.",
+  "id": "emblasoft-nscan-analytics",
+  "name": "Emblasoft nScan (Analytics)",
+  "vendor": "Emblasoft",
+  "type": "passive-probe",
+  "description": "Advanced analytics layer within nScan providing competitive visibility, deep KPI trending and anomaly detection across millions of real subscriber records using high-performance column-based data storage.",
+  "howItWorks": "nScan's analytics engine queries the continuous passive capture store across millions of subscriber records at speed. Interactive dashboards surface KPI trends, anomalies and competitive performance gaps. Advanced queries enable operators to segment by geography, technology, time period and subscriber tier for competitive position measurement.",
   "functions": [
     { "id": "f4", "coverage": "full" },
     { "id": "f9", "coverage": "partial" },
     { "id": "f1", "coverage": "partial" }
   ],
   "laws": ["law-v"],
-  "slug": "ookla-for-networks",
+  "slug": "emblasoft-nscan-analytics",
   "dateAdded": "2024-01-15"
 }

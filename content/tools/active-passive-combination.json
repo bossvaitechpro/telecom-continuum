@@ -1,10 +1,10 @@
 {
-  "id": "active-passive-combination",
-  "name": "Active + Passive Combination",
-  "vendor": "Generic",
+  "id": "evolver-nscan-combination",
+  "name": "Evolver + nScan",
+  "vendor": "Emblasoft",
   "type": "hybrid",
-  "description": "The combination of an active monitoring platform (e.g. EXFO Evolver) with a passive probe platform (e.g. RADCOM ACE) creates a complete subscriber experience picture that neither can provide alone.",
-  "howItWorks": "Active probes provide network-wide quality baselines from fixed test points. Passive probes identify which real subscribers are affected when quality degrades. The combination enables economic prioritisation: the active probe detects the problem, the passive probe identifies who is affected and their ARPU value, enabling targeted intervention within the intervention window defined by Law II.",
+  "description": "The combination of Emblasoft Evolver (active monitoring) and Emblasoft nScan (passive monitoring) delivers complete service assurance: passive visibility into every live subscriber session, validated and reproduced under controlled conditions by active synthetic testing.",
+  "howItWorks": "nScan provides continuous passive visibility into all live subscriber traffic. When an anomaly is detected, Evolver reproduces the same scenario using synthetic sessions under controlled conditions, confirming the root cause and validating the fix by rerunning the test in the live network. This active-passive loop reduces time to resolution, improves service reliability, and closes the gap between network-side evidence and service-level proof. Together they cover the full observability stack: delivered quality, subscriber experience segmentation, model integrity, SLA verification, revenue integrity, and security resilience.",
   "functions": [
     { "id": "f1", "coverage": "full" },
     { "id": "f2", "coverage": "full" },
@@ -14,6 +14,6 @@
     { "id": "f8", "coverage": "full" }
   ],
   "laws": ["law-i", "law-ii", "law-iii", "law-vi"],
-  "slug": "active-passive-combination",
+  "slug": "evolver-nscan-combination",
   "dateAdded": "2024-01-15"
 }

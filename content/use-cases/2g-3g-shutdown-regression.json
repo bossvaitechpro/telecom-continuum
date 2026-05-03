@@ -5,7 +5,7 @@
   "type": "solo",
   "laws": ["law-iv"],
   "functions": ["f3"],
-  "tools": ["keysight-nemo"],
+  "tools": ["emblasoft-evolver-functional"],
   "autonomyLevels": {
     "L1": "Engineer reviews drive test results, raises re-planning ticket for affected cells.",
     "L2": "System re-enables legacy coverage in affected micro-zones pending fix.",
@@ -14,7 +14,7 @@
   },
   "economicOutcome": "Coverage obligation breach prevented. Regulatory fine risk eliminated.",
   "economicCalculation": "Average NRA fine for coverage breach in EU: €500K–€2M. Cost of continuous active testing: <€200K/year.",
-  "combinationUpgrade": "Add passive probe (RADCOM ACE) to identify which subscriber types were affected during the regression window — M2M, IoT, consumer — enabling targeted remediation.",
+  "combinationUpgrade": "Add Emblasoft nScan (passive probe) to identify which subscriber types were affected during the regression window — M2M, IoT, consumer — enabling targeted remediation.",
   "slug": "2g-3g-shutdown-regression",
   "dateAdded": "2024-01-15"
 }

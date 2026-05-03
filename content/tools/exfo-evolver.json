@@ -1,10 +1,10 @@
 {
-  "id": "exfo-evolver",
-  "name": "EXFO Evolver",
-  "vendor": "EXFO",
+  "id": "emblasoft-evolver",
+  "name": "Emblasoft Evolver",
+  "vendor": "Emblasoft",
   "type": "active-monitoring",
-  "description": "Continuous active probe platform for 5G SA, slicing, and end-to-end service testing. Deploys software probes on standard hardware across the network footprint.",
-  "howItWorks": "Evolver runs synthetic transactions — voice calls, data sessions, video streams — from fixed probe nodes distributed across the network. It measures what a real subscriber would experience: call setup time, throughput, latency, video MOS. Results are compared against baselines and SLA thresholds in real time.",
+  "description": "Service assurance, validation and testing for mobile network services — from 5G SA to legacy. A single cloud-native platform covering active monitoring, functional testing, performance testing and service enablement across any network.",
+  "howItWorks": "Evolver deploys distributed active agents that run synthetic transactions — voice, data, messaging, video — across the network using full stack L7 protocols. Hundreds of test cases execute via REST API integration with CI/CD/CT orchestration. A powerful script editor enables custom scenarios. Rich KPI reporting, alarms and flexible dashboards deliver real-time and historical insight. Evolver reproduces issues detected in live traffic under controlled conditions, confirming fixes by rerunning the same scenario in the live network.",
   "functions": [
     { "id": "f1", "coverage": "full" },
     { "id": "f3", "coverage": "full" },
@@ -15,6 +15,6 @@
     { "id": "f2", "coverage": "partial" }
   ],
   "laws": ["law-i", "law-iii", "law-vi"],
-  "slug": "exfo-evolver",
+  "slug": "emblasoft-evolver",
   "dateAdded": "2024-01-15"
 }

@@ -1,10 +1,10 @@
 {
-  "id": "keysight-nemo",
-  "name": "Keysight Nemo",
-  "vendor": "Keysight Technologies",
-  "type": "drive-test",
-  "description": "Industry-standard drive test and benchmarking platform for outdoor network measurement. Covers 5G NR, LTE, and legacy technologies with automated post-processing.",
-  "howItWorks": "Nemo deploys measurement devices in vehicles or on foot to capture network performance at specific geographic locations. Measurements include signal levels, throughput, call quality, and handover success across all radio technologies simultaneously. Post-processing maps results against geography for coverage analysis and competitor benchmarking.",
+  "id": "emblasoft-evolver-functional",
+  "name": "Emblasoft Evolver (Functional Testing)",
+  "vendor": "Emblasoft",
+  "type": "active-monitoring",
+  "description": "Functional testing capability within Evolver for validating network features and updates, supporting CI/CD schedules. Any scenario can be modelled for proving service capabilities in multi-vendor networks.",
+  "howItWorks": "Evolver's functional testing mode validates features and updates against defined scenarios. Flexibility allows any scenario to be modelled for proving service capabilities in multi-vendor networks. REST API integration ensures alignment with CI/CD/CT workflows.",
   "functions": [
     { "id": "f3", "coverage": "full" },
     { "id": "f4", "coverage": "full" },
@@ -12,6 +12,6 @@
     { "id": "f1", "coverage": "partial" }
   ],
   "laws": ["law-iv", "law-v"],
-  "slug": "keysight-nemo",
+  "slug": "emblasoft-evolver-functional",
   "dateAdded": "2024-01-15"
 }

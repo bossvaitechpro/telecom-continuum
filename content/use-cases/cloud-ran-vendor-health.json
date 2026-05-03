@@ -5,7 +5,7 @@
   "type": "solo",
   "laws": ["law-iv"],
   "functions": ["f10"],
-  "tools": ["exfo-evolver"],
+  "tools": ["emblasoft-evolver"],
   "autonomyLevels": {
     "L1": "Engineering team correlates probe failures with vendor platform logs. Vendor ticket raised.",
     "L2": "Traffic rerouted away from degraded vendor clusters. Vendor escalated automatically.",
@@ -14,7 +14,7 @@
   },
   "economicOutcome": "Subscriber impact from third-party vendor failure contained. Vendor SLA claim evidence captured.",
   "economicCalculation": "Cloud RAN vendor SLA typically includes credits for availability breach. For a €5M annual contract with 99.99% availability SLA: each hour of breach = €570 credit. Detection speed determines credit capture.",
-  "combinationUpgrade": "Add passive probe (RADCOM ACE) to identify which subscribers were affected during the vendor platform degradation — enabling precise impact quantification for the vendor claim.",
+  "combinationUpgrade": "Add Emblasoft nScan (passive probe) to identify which subscribers were affected during the vendor platform degradation — enabling precise impact quantification for the vendor claim.",
   "slug": "cloud-ran-vendor-health",
   "dateAdded": "2024-01-15"
 }

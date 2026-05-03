@@ -1,10 +1,10 @@
 {
-  "id": "radcom-ace",
-  "name": "RADCOM ACE",
-  "vendor": "RADCOM",
+  "id": "emblasoft-nscan",
+  "name": "Emblasoft nScan",
+  "vendor": "Emblasoft",
   "type": "passive-probe",
-  "description": "Cloud-native passive probe and analytics platform for 5G SA core and RAN. Provides per-subscriber experience visibility from network-side traffic analysis.",
-  "howItWorks": "RADCOM ACE taps into 5G core interfaces (N1/N2/N3/N6) and performs deep packet inspection to reconstruct individual subscriber sessions. It correlates network telemetry with subscriber identity and ARPU data from BSS, enabling per-subscriber experience scoring without active test traffic.",
+  "description": "Real-time passive monitoring platform providing continuous visibility into live network behaviour from SS7 to 5G SA. Captures every session for deep diagnostics, subscriber tracing and root cause analysis across voice, data and messaging.",
+  "howItWorks": "nScan continuously taps live network traffic across fixed and mobile interfaces — from legacy SS7 through to 5G SA. All sessions are captured and stored using high-performance column-based data storage, enabling fast queries across millions of records. Real-time and on-demand subscriber tracing isolates specific sessions or call flows instantly. Interactive dashboards visualise KPIs, trends and anomalies. Full support for shared RAN environments including MOCN and MORAN. Combined with Evolver, nScan enables operators to reproduce issues detected in live traffic under controlled active conditions.",
   "functions": [
     { "id": "f2", "coverage": "full" },
     { "id": "f7", "coverage": "full" },
@@ -13,6 +13,6 @@
     { "id": "f5", "coverage": "partial" }
   ],
   "laws": ["law-ii", "law-iii", "law-vi"],
-  "slug": "radcom-ace",
+  "slug": "emblasoft-nscan",
   "dateAdded": "2024-01-15"
 }

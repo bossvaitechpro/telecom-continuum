@@ -5,7 +5,7 @@
   "type": "combination",
   "laws": ["law-iv"],
   "functions": ["f9"],
-  "tools": ["exfo-evolver", "keysight-nemo"],
+  "tools": ["emblasoft-evolver", "emblasoft-evolver-functional"],
   "autonomyLevels": {
     "L1": "Engineering team compiles drive test and active probe data into regulatory submission.",
     "L2": "Automated coverage report generation from continuous test data.",
@@ -14,7 +14,7 @@
   },
   "economicOutcome": "Licence condition compliance demonstrated. Spectrum licence protected. Fine risk eliminated.",
   "economicCalculation": "5G spectrum licence value: €500M–€2B. Coverage obligation breach risk: licence review, fines, or revocation. Continuous testing cost: <0.1% of licence value.",
-  "combinationUpgrade": "Drive test (Keysight Nemo) provides geographically precise outdoor coverage evidence. Active probes (EXFO Evolver) provide continuous indoor and network-wide service quality evidence. Together they address both coverage and quality dimensions of most licence conditions.",
+  "combinationUpgrade": "Emblasoft Evolver functional testing provides geographically targeted scenario evidence. Evolver service assurance mode provides continuous network-wide service quality evidence. Together they address both coverage and quality dimensions of most licence conditions.",
   "slug": "5g-sa-coverage-obligation",
   "dateAdded": "2024-01-15"
 }

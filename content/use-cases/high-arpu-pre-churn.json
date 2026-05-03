@@ -5,7 +5,7 @@
   "type": "combination",
   "laws": ["law-ii"],
   "functions": ["f2"],
-  "tools": ["radcom-ace", "exfo-evolver"],
+  "tools": ["emblasoft-nscan", "emblasoft-evolver"],
   "autonomyLevels": {
     "L1": "CRM team notified. Account manager calls subscriber within 24 hours.",
     "L2": "Automated SMS/app notification sent. Compensation credit applied if confirmed.",
@@ -14,7 +14,7 @@
   },
   "economicOutcome": "High-ARPU subscriber retained before entering the churn decision window.",
   "economicCalculation": "Preventing churn of one €50 ARPU subscriber = €600 annual revenue. At 500 such interventions/year = €300K retained revenue.",
-  "combinationUpgrade": "Active probe (EXFO Evolver) confirms whether the degradation is network-wide or subscriber-specific, enabling precise root cause and avoiding unnecessary compensation.",
+  "combinationUpgrade": "Emblasoft Evolver (active probe) confirms whether the degradation is network-wide or subscriber-specific by reproducing the issue under controlled conditions — enabling precise root cause analysis and avoiding unnecessary compensation.",
   "slug": "high-arpu-pre-churn",
   "dateAdded": "2024-01-15"
 }
