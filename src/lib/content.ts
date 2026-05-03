@@ -95,6 +95,10 @@ export function getToolsForFunction(functionId: string): Tool[] {
   return allTools.filter(t => t.functions.some(f => f.id === functionId));
 }
 
+export function getLawsForFunction(functionId: string): Law[] {
+  return allLaws.filter(l => l.derivedFunctions.includes(functionId));
+}
+
 export function getFunctionsForLaw(lawId: string): ObservabilityFunction[] {
   const law = getLawById(lawId);
   if (!law) return [];

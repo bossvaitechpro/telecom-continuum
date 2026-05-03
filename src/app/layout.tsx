@@ -6,12 +6,12 @@ import { QuickJump } from "@/components/QuickJump";
 
 export const metadata: Metadata = {
   title: {
-    default: "Telecom Economy Continuum",
-    template: "%s | Telecom Economy Continuum",
+    default: "Observe. Resolve. Automate.",
+    template: "%s | Observe. Resolve. Automate.",
   },
-  description: "The Laws of Network Observability — From Theory to Practice. A knowledge portal for MNO professionals.",
+  description: "The complete observability framework for autonomous networks. Ten functions. Six economic laws. One standard.",
   openGraph: {
-    siteName: "Telecom Economy Continuum",
+    siteName: "Observe. Resolve. Automate.",
     type: "website",
   },
 };

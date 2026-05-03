@@ -8,10 +8,10 @@ import { Menu, X, Sun, Moon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/laws', label: 'Laws' },
   { href: '/functions', label: 'Functions' },
-  { href: '/tools', label: 'Tools' },
   { href: '/use-cases', label: 'Use Cases' },
+  { href: '/laws', label: 'Laws' },
+  { href: '/tools', label: 'Tools' },
   { href: '/about', label: 'About' },
 ];
 
@@ -26,10 +26,10 @@ export function Navbar() {
         <div className="flex items-center justify-between h-14">
           <Link href="/" className="flex items-center gap-2">
             <span className="font-serif text-base font-bold text-[var(--foreground)]">
-              Telecom<span className="text-brand-gold">Economy</span>
+              Observe.<span className="text-brand-gold">Resolve.</span>
             </span>
             <span className="hidden sm:inline text-xs text-[var(--muted)] border border-[var(--card-border)] px-1.5 py-0.5 rounded font-mono">
-              Continuum
+              Automate.
             </span>
           </Link>
 
