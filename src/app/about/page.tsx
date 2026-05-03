@@ -61,7 +61,7 @@ export default function AboutPage() {
               </p>
               <div className="flex gap-3">
                 <a
-                  href="https://www.linkedin.com/in/vugaraliyev"
+                  href="https://www.linkedin.com/in/-vugaraliyev/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-xs text-brand-blue hover:underline"
