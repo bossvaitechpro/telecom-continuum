@@ -1,0 +1,20 @@
+{
+  "id": "2g-3g-shutdown-regression",
+  "name": "2G/3G Shutdown Regression Detection",
+  "trigger": "Active test detects voice or data failure on 4G in cells where 2G/3G was recently decommissioned.",
+  "type": "solo",
+  "laws": ["law-iv"],
+  "functions": ["f3"],
+  "tools": ["keysight-nemo"],
+  "autonomyLevels": {
+    "L1": "Engineer reviews drive test results, raises re-planning ticket for affected cells.",
+    "L2": "System re-enables legacy coverage in affected micro-zones pending fix.",
+    "L3": "Automated re-planning triggered. Coverage obligation report generated.",
+    "L4": "Network autonomously adjusts coverage parameters to compensate. Regulatory evidence logged."
+  },
+  "economicOutcome": "Coverage obligation breach prevented. Regulatory fine risk eliminated.",
+  "economicCalculation": "Average NRA fine for coverage breach in EU: €500K–€2M. Cost of continuous active testing: <€200K/year.",
+  "combinationUpgrade": "Add passive probe (RADCOM ACE) to identify which subscriber types were affected during the regression window — M2M, IoT, consumer — enabling targeted remediation.",
+  "slug": "2g-3g-shutdown-regression",
+  "dateAdded": "2024-01-15"
+}

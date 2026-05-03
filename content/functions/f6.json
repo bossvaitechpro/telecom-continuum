@@ -1,0 +1,21 @@
+{
+  "id": "f6",
+  "ref": "F6",
+  "name": "Cost Efficiency Validation",
+  "type": "conditional",
+  "dimension": "cost",
+  "lawAnchors": ["law-i"],
+  "question": "Is the network spending energy and OpEx on capacity that is actually being used and delivered?",
+  "ifAbsent": "Energy optimisation actions are applied without subscriber impact validation. Cell sleeping may degrade coverage in occupied areas. CapEx planning rests on traffic models that are not ground-truth verified.",
+  "atL4Role": "energy-optimisation-validator",
+  "atL4": "Energy and cost optimisation decisions are validated in real time against delivered quality. Autonomous cell sleeping, carrier aggregation adjustments, and RAN sharing decisions are constrained by continuous F6 feedback.",
+  "color": "#1a4f8a",
+  "slug": "f6-cost-efficiency-validation",
+  "toolCoverage": {
+    "active-monitoring": "full",
+    "passive-probe": "partial",
+    "drive-test": "partial",
+    "crowdsourced": "none",
+    "cem": "none"
+  }
+}

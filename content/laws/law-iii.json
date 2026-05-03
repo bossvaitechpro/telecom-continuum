@@ -1,0 +1,14 @@
+{
+  "id": "law-iii",
+  "number": 3,
+  "name": "Service Stratification",
+  "statement": "Not all traffic is equal. Enterprise, consumer, and IoT generate different revenue per bit. The network that cannot distinguish them cannot price them.",
+  "corollary": "Flat-rate pricing destroys value. Differentiated QoS requires differentiated observability.",
+  "dimension": "value",
+  "derivedFunctions": ["f5", "f7"],
+  "color": "#1a6a5a",
+  "mechanism": "A single LTE cell may simultaneously carry a surgeon's remote consultation, a teenager's video stream, and a smart meter ping. These generate radically different revenue per megabyte. An operator that treats them identically in its network policies and pricing model systematically destroys enterprise ARPU. The function of observability here is to verify that differentiation is actually delivered — not just configured.",
+  "atL4": "At L4, SLA enforcement becomes autonomous. The network detects enterprise SLA risk and reroutes or prioritises before breach occurs. Human review is limited to exception reporting.",
+  "slug": "law-iii-service-stratification",
+  "relatedPredictions": []
+}

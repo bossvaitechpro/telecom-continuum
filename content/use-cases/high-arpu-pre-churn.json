@@ -1,0 +1,20 @@
+{
+  "id": "high-arpu-pre-churn",
+  "name": "High-ARPU Pre-Churn Detection",
+  "trigger": "Passive probe identifies subscriber with ARPU >€50 experiencing sustained MOS below 3.5 for 48 hours. No complaint raised.",
+  "type": "combination",
+  "laws": ["law-ii"],
+  "functions": ["f2"],
+  "tools": ["radcom-ace", "exfo-evolver"],
+  "autonomyLevels": {
+    "L1": "CRM team notified. Account manager calls subscriber within 24 hours.",
+    "L2": "Automated SMS/app notification sent. Compensation credit applied if confirmed.",
+    "L3": "Priority routing applied for affected subscriber. Case opened in CRM automatically.",
+    "L4": "Network autonomously reroutes subscriber traffic, applies proactive credit, and closes case — subscriber never aware of the issue."
+  },
+  "economicOutcome": "High-ARPU subscriber retained before entering the churn decision window.",
+  "economicCalculation": "Preventing churn of one €50 ARPU subscriber = €600 annual revenue. At 500 such interventions/year = €300K retained revenue.",
+  "combinationUpgrade": "Active probe (EXFO Evolver) confirms whether the degradation is network-wide or subscriber-specific, enabling precise root cause and avoiding unnecessary compensation.",
+  "slug": "high-arpu-pre-churn",
+  "dateAdded": "2024-01-15"
+}

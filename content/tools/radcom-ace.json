@@ -1,0 +1,18 @@
+{
+  "id": "radcom-ace",
+  "name": "RADCOM ACE",
+  "vendor": "RADCOM",
+  "type": "passive-probe",
+  "description": "Cloud-native passive probe and analytics platform for 5G SA core and RAN. Provides per-subscriber experience visibility from network-side traffic analysis.",
+  "howItWorks": "RADCOM ACE taps into 5G core interfaces (N1/N2/N3/N6) and performs deep packet inspection to reconstruct individual subscriber sessions. It correlates network telemetry with subscriber identity and ARPU data from BSS, enabling per-subscriber experience scoring without active test traffic.",
+  "functions": [
+    { "id": "f2", "coverage": "full" },
+    { "id": "f7", "coverage": "full" },
+    { "id": "f8", "coverage": "full" },
+    { "id": "f1", "coverage": "partial" },
+    { "id": "f5", "coverage": "partial" }
+  ],
+  "laws": ["law-ii", "law-iii", "law-vi"],
+  "slug": "radcom-ace",
+  "dateAdded": "2024-01-15"
+}

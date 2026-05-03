@@ -1,0 +1,14 @@
+{
+  "id": "law-ii",
+  "number": 2,
+  "name": "Demand Inelasticity",
+  "statement": "Subscribers do not reduce consumption when quality degrades. They churn. Demand is inelastic to price within the loyalty window.",
+  "corollary": "The intervention window — the period between first degradation and churn decision — is the operator's only actionable asset.",
+  "dimension": "demand",
+  "derivedFunctions": ["f2", "f4"],
+  "color": "#2a6a9a",
+  "mechanism": "Unlike most markets, telecom subscribers cannot easily reduce their network usage when quality drops. They need connectivity. When quality falls below tolerance, they do not consume less — they leave. The loyalty window varies by segment: enterprise contracts extend it, consumer prepaid compresses it to days. Whoever can identify the high-ARPU subscriber in that window can intervene.",
+  "atL4": "At L4, the network identifies individual subscriber degradation in real time and triggers personalised intervention — proactive compensation, priority routing, or case management — before the subscriber is aware a problem occurred.",
+  "slug": "law-ii-demand-inelasticity",
+  "relatedPredictions": []
+}

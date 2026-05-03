@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:ital,wght@0,400;1,400&family=DM+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f5f3ed;
+    --foreground: #0f0f14;
+    --card: #ffffff;
+    --card-border: #e2dfd8;
+    --muted: #6b7280;
+    --muted-bg: #f0ede6;
+  }
+  .dark {
+    --background: #0a0a10;
+    --foreground: #e8e6e1;
+    --card: #12121a;
+    --card-border: #1e1e2a;
+    --muted: #9ca3af;
+    --muted-bg: #16161f;
+  }
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] font-sans antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

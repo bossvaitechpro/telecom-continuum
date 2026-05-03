@@ -1,0 +1,21 @@
+{
+  "id": "f7",
+  "ref": "F7",
+  "name": "Revenue Integrity Assurance",
+  "type": "mandatory",
+  "dimension": "revenue",
+  "lawAnchors": ["law-iii"],
+  "question": "Is all billable usage being correctly rated, recorded, and charged — with no leakage between delivery and billing?",
+  "ifAbsent": "Revenue leakage occurs silently. Unbilled usage accumulates. Roaming, data, and premium service charges are not reconciled against delivered service records.",
+  "atL4Role": "leakage-detection-continuous",
+  "atL4": "Revenue assurance becomes continuous rather than periodic. The autonomous system identifies billing anomalies in near real time, triggers reconciliation, and flags systematic issues for intervention — eliminating the monthly audit cycle.",
+  "color": "#8a1a1a",
+  "slug": "f7-revenue-integrity-assurance",
+  "toolCoverage": {
+    "active-monitoring": "partial",
+    "passive-probe": "full",
+    "drive-test": "none",
+    "crowdsourced": "none",
+    "cem": "partial"
+  }
+}

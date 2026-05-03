@@ -1,0 +1,20 @@
+{
+  "id": "5g-sa-coverage-obligation",
+  "name": "5G SA Coverage Obligation Proof",
+  "trigger": "Regulator requests evidence of 5G SA population coverage meeting licence condition of 80% by end of year.",
+  "type": "combination",
+  "laws": ["law-iv"],
+  "functions": ["f9"],
+  "tools": ["exfo-evolver", "keysight-nemo"],
+  "autonomyLevels": {
+    "L1": "Engineering team compiles drive test and active probe data into regulatory submission.",
+    "L2": "Automated coverage report generation from continuous test data.",
+    "L3": "Real-time compliance dashboard with regulator portal access.",
+    "L4": "Continuous automated compliance evidence. Regulator access to live data. No submission cycle required."
+  },
+  "economicOutcome": "Licence condition compliance demonstrated. Spectrum licence protected. Fine risk eliminated.",
+  "economicCalculation": "5G spectrum licence value: €500M–€2B. Coverage obligation breach risk: licence review, fines, or revocation. Continuous testing cost: <0.1% of licence value.",
+  "combinationUpgrade": "Drive test (Keysight Nemo) provides geographically precise outdoor coverage evidence. Active probes (EXFO Evolver) provide continuous indoor and network-wide service quality evidence. Together they address both coverage and quality dimensions of most licence conditions.",
+  "slug": "5g-sa-coverage-obligation",
+  "dateAdded": "2024-01-15"
+}

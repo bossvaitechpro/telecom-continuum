@@ -1,0 +1,16 @@
+{
+  "id": "ookla-for-networks",
+  "name": "Ookla for Networks",
+  "vendor": "Ookla",
+  "type": "crowdsourced",
+  "description": "Crowdsourced network intelligence platform aggregating billions of Speedtest measurements to provide competitive benchmarking and coverage insights at scale.",
+  "howItWorks": "Ookla aggregates opt-in performance measurements from the Speedtest app — hundreds of millions of monthly tests. Operators access this data through the Ookla for Networks portal, filtered by geography, time period, device type, and operator. The result is a continuous, large-scale view of how every operator performs in every geography from real subscriber devices.",
+  "functions": [
+    { "id": "f4", "coverage": "full" },
+    { "id": "f9", "coverage": "partial" },
+    { "id": "f1", "coverage": "partial" }
+  ],
+  "laws": ["law-v"],
+  "slug": "ookla-for-networks",
+  "dateAdded": "2024-01-15"
+}

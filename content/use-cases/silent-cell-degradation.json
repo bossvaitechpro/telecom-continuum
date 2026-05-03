@@ -1,0 +1,20 @@
+{
+  "id": "silent-cell-degradation",
+  "name": "Silent Cell Degradation Detection",
+  "trigger": "Active probe throughput drops 20% below 7-day baseline. No OSS alarm. No PM counter breach.",
+  "type": "solo",
+  "laws": ["law-i", "law-vi"],
+  "functions": ["f1"],
+  "tools": ["exfo-evolver"],
+  "autonomyLevels": {
+    "L1": "Engineer sees alert, raises ticket, field team investigates within hours.",
+    "L2": "System auto-adjusts RAN parameters within pre-defined safe bounds. Engineer notified.",
+    "L3": "Cross-domain healing triggered automatically. Human reviews outcome report.",
+    "L4": "Autonomous system detects, heals, and validates — before any human is aware."
+  },
+  "economicOutcome": "Churn prevented in affected cell area before subscriber notices degradation.",
+  "economicCalculation": "At Tele2 Sweden scale: 1,000 such events/month × avg €28 ARPU × 12 months = €336K annual churn prevention.",
+  "combinationUpgrade": "Combine with passive probe (F2) to identify which specific subscribers were affected and their ARPU value — enabling economic prioritisation of the response.",
+  "slug": "silent-cell-degradation",
+  "dateAdded": "2024-01-15"
+}

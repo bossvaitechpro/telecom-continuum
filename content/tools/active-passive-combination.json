@@ -1,0 +1,19 @@
+{
+  "id": "active-passive-combination",
+  "name": "Active + Passive Combination",
+  "vendor": "Generic",
+  "type": "hybrid",
+  "description": "The combination of an active monitoring platform (e.g. EXFO Evolver) with a passive probe platform (e.g. RADCOM ACE) creates a complete subscriber experience picture that neither can provide alone.",
+  "howItWorks": "Active probes provide network-wide quality baselines from fixed test points. Passive probes identify which real subscribers are affected when quality degrades. The combination enables economic prioritisation: the active probe detects the problem, the passive probe identifies who is affected and their ARPU value, enabling targeted intervention within the intervention window defined by Law II.",
+  "functions": [
+    { "id": "f1", "coverage": "full" },
+    { "id": "f2", "coverage": "full" },
+    { "id": "f3", "coverage": "full" },
+    { "id": "f5", "coverage": "full" },
+    { "id": "f7", "coverage": "full" },
+    { "id": "f8", "coverage": "full" }
+  ],
+  "laws": ["law-i", "law-ii", "law-iii", "law-vi"],
+  "slug": "active-passive-combination",
+  "dateAdded": "2024-01-15"
+}

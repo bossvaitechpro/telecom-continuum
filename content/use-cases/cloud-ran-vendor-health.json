@@ -1,0 +1,20 @@
+{
+  "id": "cloud-ran-vendor-health",
+  "name": "Cloud RAN Vendor Platform Health",
+  "trigger": "Active probe detects increasing call setup failures correlated with a single vDU vendor platform in three regional clusters.",
+  "type": "solo",
+  "laws": ["law-iv"],
+  "functions": ["f10"],
+  "tools": ["exfo-evolver"],
+  "autonomyLevels": {
+    "L1": "Engineering team correlates probe failures with vendor platform logs. Vendor ticket raised.",
+    "L2": "Traffic rerouted away from degraded vendor clusters. Vendor escalated automatically.",
+    "L3": "Automated vendor platform health scoring. SLA breach clock started. Compensation claim prepared.",
+    "L4": "Autonomous traffic management routes around failing vendor components. Vendor notified with full evidence package. Recovery validated before traffic restoration."
+  },
+  "economicOutcome": "Subscriber impact from third-party vendor failure contained. Vendor SLA claim evidence captured.",
+  "economicCalculation": "Cloud RAN vendor SLA typically includes credits for availability breach. For a €5M annual contract with 99.99% availability SLA: each hour of breach = €570 credit. Detection speed determines credit capture.",
+  "combinationUpgrade": "Add passive probe (RADCOM ACE) to identify which subscribers were affected during the vendor platform degradation — enabling precise impact quantification for the vendor claim.",
+  "slug": "cloud-ran-vendor-health",
+  "dateAdded": "2024-01-15"
+}

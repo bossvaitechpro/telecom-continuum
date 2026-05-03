@@ -1,0 +1,21 @@
+{
+  "id": "f4",
+  "ref": "F4",
+  "name": "Competitive Position Measurement",
+  "type": "conditional",
+  "dimension": "quality",
+  "lawAnchors": ["law-v"],
+  "question": "How does the delivered network experience compare to what competitors deliver in the same geography?",
+  "ifAbsent": "Network improvement is measured against internal baselines. Competitive gaps persist undetected. NPS improvements may lag competitor improvements, generating churn despite internal KPI progress.",
+  "atL4Role": "optimisation-target-input",
+  "atL4": "Competitive benchmarks feed directly into autonomous optimisation targets. Geography-specific competitive gaps trigger resource reallocation without requiring manual analysis or planning cycles.",
+  "color": "#5a1a6a",
+  "slug": "f4-competitive-position-measurement",
+  "toolCoverage": {
+    "active-monitoring": "none",
+    "passive-probe": "none",
+    "drive-test": "full",
+    "crowdsourced": "full",
+    "cem": "none"
+  }
+}

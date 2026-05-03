@@ -1,0 +1,20 @@
+{
+  "id": "cell-energy-optimisation",
+  "name": "Cell Energy Optimisation Validation",
+  "trigger": "Energy management system proposes cell sleeping for 47 low-traffic cells. Active probe confirms coverage impact before execution.",
+  "type": "solo",
+  "laws": ["law-i"],
+  "functions": ["f6"],
+  "tools": ["exfo-evolver"],
+  "autonomyLevels": {
+    "L1": "Engineer reviews probe coverage data before approving cell sleep schedule.",
+    "L2": "Cell sleeping applied automatically within pre-validated coverage boundaries.",
+    "L3": "Dynamic cell sleeping adjusted in real time based on continuous probe feedback.",
+    "L4": "Autonomous energy optimisation continuously validated against delivered coverage. No human approval required."
+  },
+  "economicOutcome": "Energy savings achieved without coverage degradation or subscriber impact.",
+  "economicCalculation": "Average energy cost per active cell site: €15K–€25K/year. 10% reduction across 500 sites = €750K–€1.25M annual saving. Zero churn cost if coverage impact is validated before execution.",
+  "combinationUpgrade": "None required for validation. Drive test (Keysight Nemo) can provide periodic deep validation in high-risk areas.",
+  "slug": "cell-energy-optimisation",
+  "dateAdded": "2024-01-15"
+}

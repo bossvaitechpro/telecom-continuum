@@ -1,0 +1,14 @@
+{
+  "id": "law-vi",
+  "number": 6,
+  "name": "Observability Asymmetry",
+  "statement": "The network always knows more about itself than the subscriber does. But the subscriber's experience is the only truth that generates revenue.",
+  "corollary": "Internal observability (network-side KPIs) and external observability (subscriber-side measurement) are not substitutes. Both are required. The gap between them is where revenue leaks.",
+  "dimension": "information",
+  "derivedFunctions": ["f1", "f2", "f3"],
+  "color": "#1a4f8a",
+  "mechanism": "A network element can report 99.9% availability while thousands of subscribers experience degraded service. This is not a measurement error — it is a structural asymmetry. The network measures itself from the inside; subscribers experience it from the outside. Active probes, drive tests, and CEM platforms are the instruments that close this gap. Without them, the operator is managing a proxy for quality, not quality itself.",
+  "atL4": "At L4, the asymmetry collapses. The autonomous network synthesises external subscriber signals (active probe data, CEM signals, complaint patterns) with internal telemetry to form a unified quality model. Decisions are made against the subscriber-side ground truth, not the network-side proxy.",
+  "slug": "law-vi-observability-asymmetry",
+  "relatedPredictions": []
+}

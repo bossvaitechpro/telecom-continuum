@@ -1,0 +1,20 @@
+{
+  "id": "signalling-attack-detection",
+  "name": "Signalling Attack Detection",
+  "trigger": "Passive probe detects anomalous SS7 location request volume — 400% above baseline — originating from a single interconnect partner.",
+  "type": "solo",
+  "laws": ["law-iv"],
+  "functions": ["f8"],
+  "tools": ["radcom-ace"],
+  "autonomyLevels": {
+    "L1": "Security team alerted. Interconnect traffic manually reviewed. Partner contacted.",
+    "L2": "Automated rate limiting applied to anomalous signalling source.",
+    "L3": "Interconnect traffic automatically filtered and quarantined. Security operations notified.",
+    "L4": "Autonomous threat response. Signalling attack blocked within seconds. Forensic evidence logged. Regulatory notification prepared."
+  },
+  "economicOutcome": "Subscriber location data protected. Regulatory fine for SS7 breach avoided. Interconnect partner liability established.",
+  "economicCalculation": "GDPR fine for location data breach: up to 4% global revenue. For a €500M revenue MNO: up to €20M exposure per confirmed breach incident.",
+  "combinationUpgrade": "None — passive probe is the primary instrument for signalling-layer security. Active probes cannot see inter-operator signalling.",
+  "slug": "signalling-attack-detection",
+  "dateAdded": "2024-01-15"
+}

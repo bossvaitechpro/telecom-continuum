@@ -1,0 +1,21 @@
+{
+  "id": "f5",
+  "ref": "F5",
+  "name": "SLA Verification",
+  "type": "mandatory",
+  "dimension": "quality",
+  "lawAnchors": ["law-iii"],
+  "question": "Is the network actually delivering the service level promised in the enterprise or wholesale contract?",
+  "ifAbsent": "SLA breach penalties accrue undetected. Enterprise contracts are renewed or cancelled based on perceived rather than measured performance. Revenue from SLA premium pricing is unjustified.",
+  "atL4Role": "sla-enforcement-engine",
+  "atL4": "SLA verification becomes proactive rather than reactive. The network detects approaching SLA breach before it occurs and autonomously reallocates resources to prevent it — transforming SLA management from compensation to prevention.",
+  "color": "#1a6a5a",
+  "slug": "f5-sla-verification",
+  "toolCoverage": {
+    "active-monitoring": "full",
+    "passive-probe": "partial",
+    "drive-test": "none",
+    "crowdsourced": "none",
+    "cem": "partial"
+  }
+}

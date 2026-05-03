@@ -1,0 +1,21 @@
+{
+  "id": "f10",
+  "ref": "F10",
+  "name": "Ecosystem Dependency Monitoring",
+  "type": "conditional",
+  "dimension": "ecosystem",
+  "lawAnchors": ["law-iv"],
+  "question": "Are third-party platforms, cloud infrastructure, and vendor components performing to the levels the operator has committed to its customers?",
+  "ifAbsent": "Cloud RAN vendor failures, CDN degradation, or third-party API issues are detected only after subscriber complaints. SLA liability falls on the operator for failures originating outside its control.",
+  "atL4Role": "dependency-risk-management",
+  "atL4": "Ecosystem health monitoring becomes predictive. The network identifies vendor platform degradation trends before they cause service impact, enabling pre-emptive traffic rerouting or vendor escalation.",
+  "color": "#2a6a9a",
+  "slug": "f10-ecosystem-dependency-monitoring",
+  "toolCoverage": {
+    "active-monitoring": "full",
+    "passive-probe": "partial",
+    "drive-test": "none",
+    "crowdsourced": "none",
+    "cem": "partial"
+  }
+}

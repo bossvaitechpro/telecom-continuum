@@ -1,0 +1,20 @@
+{
+  "id": "competitive-gap-detection",
+  "name": "Competitive Gap Detection",
+  "trigger": "Ookla benchmarking shows operator median 5G throughput 30% below market leader in three consecutive months in top-5 revenue cities.",
+  "type": "combination",
+  "laws": ["law-v"],
+  "functions": ["f4"],
+  "tools": ["ookla-for-networks", "keysight-nemo"],
+  "autonomyLevels": {
+    "L1": "Network planning team reviews gap report. CapEx re-prioritisation in next planning cycle.",
+    "L2": "Automated parameter optimisation in affected geographies. Results tracked against competitor benchmark.",
+    "L3": "Cross-domain optimisation triggered. Spectrum refarming initiated in identified gap zones.",
+    "L4": "Autonomous network continuously monitors competitive position and adjusts resource allocation to maintain parity in prioritised geographies."
+  },
+  "economicOutcome": "Competitive parity restored in high-revenue geographies before NPS gap widens into churn acceleration.",
+  "economicCalculation": "A 10-point NPS gap to market leader in a city of 500K subscribers correlates with 2–4% elevated churn. At €28 ARPU: 10,000 subscribers × €28 × 12 = €3.36M annual revenue at risk.",
+  "combinationUpgrade": "Drive test (Keysight Nemo) validates Ookla crowdsource data with controlled measurements, confirming competitive gap before CapEx commitment.",
+  "slug": "competitive-gap-detection",
+  "dateAdded": "2024-01-15"
+}

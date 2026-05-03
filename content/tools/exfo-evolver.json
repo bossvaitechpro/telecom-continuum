@@ -1,0 +1,20 @@
+{
+  "id": "exfo-evolver",
+  "name": "EXFO Evolver",
+  "vendor": "EXFO",
+  "type": "active-monitoring",
+  "description": "Continuous active probe platform for 5G SA, slicing, and end-to-end service testing. Deploys software probes on standard hardware across the network footprint.",
+  "howItWorks": "Evolver runs synthetic transactions — voice calls, data sessions, video streams — from fixed probe nodes distributed across the network. It measures what a real subscriber would experience: call setup time, throughput, latency, video MOS. Results are compared against baselines and SLA thresholds in real time.",
+  "functions": [
+    { "id": "f1", "coverage": "full" },
+    { "id": "f3", "coverage": "full" },
+    { "id": "f5", "coverage": "full" },
+    { "id": "f6", "coverage": "full" },
+    { "id": "f9", "coverage": "full" },
+    { "id": "f10", "coverage": "full" },
+    { "id": "f2", "coverage": "partial" }
+  ],
+  "laws": ["law-i", "law-iii", "law-vi"],
+  "slug": "exfo-evolver",
+  "dateAdded": "2024-01-15"
+}

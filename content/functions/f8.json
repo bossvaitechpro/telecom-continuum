@@ -1,0 +1,21 @@
+{
+  "id": "f8",
+  "ref": "F8",
+  "name": "Security Resilience Monitoring",
+  "type": "conditional",
+  "dimension": "security",
+  "lawAnchors": ["law-iv"],
+  "question": "Is the network detecting and neutralising signalling attacks, fraud patterns, and infrastructure threats before they reach subscribers?",
+  "ifAbsent": "Signalling attacks (SS7, Diameter, GTP) go undetected. SIM swap fraud, location tracking, and call interception operate unimpeded. Regulatory security obligations are breached.",
+  "atL4Role": "autonomous-threat-response",
+  "atL4": "Security threat detection triggers autonomous response — blocking, rerouting, or isolating — without waiting for human analysis. Response time compresses from hours to seconds.",
+  "color": "#8a1a1a",
+  "slug": "f8-security-resilience-monitoring",
+  "toolCoverage": {
+    "active-monitoring": "none",
+    "passive-probe": "full",
+    "drive-test": "none",
+    "crowdsourced": "none",
+    "cem": "partial"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "revenue-leakage-identification",
+  "name": "Revenue Leakage Identification",
+  "trigger": "Passive probe CDR correlation identifies 3% of data sessions with no corresponding billing record over 30-day audit window.",
+  "type": "solo",
+  "laws": ["law-iii"],
+  "functions": ["f7"],
+  "tools": ["radcom-ace"],
+  "autonomyLevels": {
+    "L1": "Revenue assurance team reviews exception report. Manual reconciliation with BSS.",
+    "L2": "Automated flagging of unbilled sessions. Reconciliation queue created.",
+    "L3": "Real-time leakage detection with automated BSS correction trigger.",
+    "L4": "Continuous revenue integrity monitoring. Leakage corrected before monthly close."
+  },
+  "economicOutcome": "Unbilled data sessions identified and recovered. Systematic billing gap closed.",
+  "economicCalculation": "3% leakage on €10M monthly data revenue = €300K/month unrecovered. Annual: €3.6M. Passive probe cost: fraction of leakage recovered in first quarter.",
+  "combinationUpgrade": "Combine with active probe (EXFO Evolver) to confirm that service was actually delivered before raising billing correction — avoiding false recovery on genuinely failed sessions.",
+  "slug": "revenue-leakage-identification",
+  "dateAdded": "2024-01-15"
+}

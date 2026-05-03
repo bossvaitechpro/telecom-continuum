@@ -1,0 +1,14 @@
+{
+  "id": "law-iv",
+  "number": 4,
+  "name": "Technology Transition Risk",
+  "statement": "Every technology shutdown creates a regression window. Legacy subscribers, devices, and use cases do not migrate on schedule.",
+  "corollary": "The 2G/3G shutdown is not complete until active probe coverage confirms it. Internal counters confirming zero traffic are necessary but not sufficient.",
+  "dimension": "time",
+  "derivedFunctions": ["f3", "f8"],
+  "color": "#6a3a1a",
+  "mechanism": "When an operator shuts down 2G or 3G, the assumption is that all devices have migrated to 4G/5G. In practice, M2M devices, IoT sensors, alarm systems, and elderly handsets remain on legacy radio. The shutdown creates a regression window where coverage obligations may be breached, device failures go undetected, and signalling anomalies from misconfigured devices can destabilise the core. Only active testing from the subscriber perspective confirms the transition is clean.",
+  "atL4": "At L4, technology transition monitoring is continuous. The autonomous network detects migration stragglers, identifies their economic value, and triggers targeted device management or customer outreach without human initiation.",
+  "slug": "law-iv-technology-transition-risk",
+  "relatedPredictions": []
+}

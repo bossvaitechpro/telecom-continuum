@@ -1,0 +1,21 @@
+{
+  "id": "f2",
+  "ref": "F2",
+  "name": "Subscriber Experience Segmentation",
+  "type": "mandatory",
+  "dimension": "quality",
+  "lawAnchors": ["law-ii", "law-vi"],
+  "question": "Which specific subscribers are experiencing degradation right now, and what is their ARPU value?",
+  "ifAbsent": "Churn risk cannot be prioritised by economic value. High-ARPU subscribers receive the same (non-)response as low-value ones. The intervention window closes without action.",
+  "atL4Role": "churn-prediction-input",
+  "atL4": "F2 feeds the autonomous churn prediction model. When a high-ARPU subscriber's experience score drops below threshold, the network triggers personalised intervention without human initiation.",
+  "color": "#1a6a40",
+  "slug": "f2-subscriber-experience-segmentation",
+  "toolCoverage": {
+    "active-monitoring": "partial",
+    "passive-probe": "full",
+    "drive-test": "none",
+    "crowdsourced": "partial",
+    "cem": "full"
+  }
+}

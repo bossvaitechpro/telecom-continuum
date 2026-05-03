@@ -1,0 +1,21 @@
+{
+  "id": "f3",
+  "ref": "F3",
+  "name": "Model Integrity Verification",
+  "type": "conditional",
+  "dimension": "quality",
+  "lawAnchors": ["law-iv", "law-vi"],
+  "question": "Is the network's internal model of itself still accurate — or has model drift occurred since the last calibration?",
+  "ifAbsent": "Autonomous network decisions are made against a degraded model. Optimisation actions may worsen conditions they intend to improve. The longer drift goes undetected, the larger the correction required.",
+  "atL4Role": "drift-detection-critical",
+  "atL4": "F3 is the only function that becomes more critical at L4 than at L1. As autonomy increases, the cost of model drift increases proportionally. F3 is the L4-only use case anchor — without it, autonomous networks cannot be trusted.",
+  "color": "#8a6200",
+  "slug": "f3-model-integrity-verification",
+  "toolCoverage": {
+    "active-monitoring": "full",
+    "passive-probe": "partial",
+    "drive-test": "full",
+    "crowdsourced": "none",
+    "cem": "none"
+  }
+}

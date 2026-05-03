@@ -1,0 +1,14 @@
+{
+  "id": "law-v",
+  "number": 5,
+  "name": "Competitive Relativity",
+  "statement": "Network quality is experienced relative to alternatives. An operator's NPS is a function of its gap to the best available competitor, not its absolute performance.",
+  "corollary": "Internal KPIs measure the network against itself. Competitive benchmarking measures it against what the subscriber could have instead.",
+  "dimension": "competition",
+  "derivedFunctions": ["f4"],
+  "color": "#5a1a6a",
+  "mechanism": "A network improving its average throughput by 15% year-on-year may still be losing competitive ground if the market leader improved by 30%. Subscribers do not experience absolute performance — they experience relative performance each time they consider switching. Drive testing and crowdsourced benchmarking provide the only external reference point. Without it, an operator is navigating by internal compass in a moving market.",
+  "atL4": "At L4, competitive gap detection feeds directly into autonomous network optimisation targets. When the gap to a competitor in a specific geography exceeds a threshold, the network autonomously reprioritises resources to close it.",
+  "slug": "law-v-competitive-relativity",
+  "relatedPredictions": []
+}

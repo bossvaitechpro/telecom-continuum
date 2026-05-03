@@ -1,0 +1,21 @@
+{
+  "id": "f9",
+  "ref": "F9",
+  "name": "Regulatory Compliance Verification",
+  "type": "mandatory",
+  "dimension": "compliance",
+  "lawAnchors": ["law-iv"],
+  "question": "Can the operator prove to the regulator — with externally verifiable evidence — that its coverage and quality obligations are being met?",
+  "ifAbsent": "Coverage obligations are self-reported using internal data. Regulators cannot independently verify claims. Fine risk is elevated. License renewal is based on unverified assertions.",
+  "atL4Role": "compliance-evidence-automation",
+  "atL4": "Regulatory evidence is generated continuously and automatically. Compliance reports are produced in real time rather than retrospectively, enabling proactive engagement with regulators rather than reactive defence.",
+  "color": "#1a4f8a",
+  "slug": "f9-regulatory-compliance-verification",
+  "toolCoverage": {
+    "active-monitoring": "full",
+    "passive-probe": "none",
+    "drive-test": "full",
+    "crowdsourced": "partial",
+    "cem": "none"
+  }
+}

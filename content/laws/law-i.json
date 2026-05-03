@@ -1,0 +1,14 @@
+{
+  "id": "law-i",
+  "number": 1,
+  "name": "Capacity Scarcity",
+  "statement": "Every new generation releases a burst of capacity. Within 5–8 years demand consumes it entirely. Scarcity is the permanent condition.",
+  "corollary": "Whoever controls spectrum controls pricing power. Claimed capacity ≠ delivered capacity.",
+  "dimension": "space",
+  "derivedFunctions": ["f1", "f6"],
+  "color": "#1a4f8a",
+  "mechanism": "Each generational transition — 2G to 3G, 3G to 4G, 4G to 5G — creates a temporary capacity surplus. Video, IoT, and enterprise connectivity consume that surplus faster than the next generation arrives. The scarcity is structural, not accidental. An operator that cannot measure delivered capacity cannot defend its pricing position.",
+  "atL4": "At L4, the network detects capacity saturation before it manifests as degradation. Autonomous reallocation between slices and cells compresses the window between scarcity onset and user impact from hours to milliseconds.",
+  "slug": "law-i-capacity-scarcity",
+  "relatedPredictions": []
+}

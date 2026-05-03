@@ -1,0 +1,21 @@
+{
+  "id": "f1",
+  "ref": "F1",
+  "name": "Delivered Quality Measurement",
+  "type": "mandatory",
+  "dimension": "quality",
+  "lawAnchors": ["law-i", "law-vi"],
+  "question": "Is the network delivering the quality it should — from the subscriber's perspective, not the network element's?",
+  "ifAbsent": "CapEx is spent on capacity that may not reach users. ARPU defence rests on unverified internal KPIs. Silent degradation goes undetected until churn occurs.",
+  "atL4Role": "ground-truth-calibration",
+  "atL4": "F1 becomes the ground truth input for autonomous quality management. Active probe signals calibrate the AI model against reality, preventing model drift where internal KPIs diverge from subscriber experience.",
+  "color": "#1a4f8a",
+  "slug": "f1-delivered-quality-measurement",
+  "toolCoverage": {
+    "active-monitoring": "full",
+    "passive-probe": "partial",
+    "drive-test": "partial",
+    "crowdsourced": "partial",
+    "cem": "partial"
+  }
+}
