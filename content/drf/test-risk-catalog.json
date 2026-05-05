@@ -1,0 +1,264 @@
+{
+  "version": "1.0",
+  "description": "DRF Test Cases Categorized by Revenue Risk - Based on Risk-Based Testing Pyramid",
+  "framework": "Three-Tier Risk Model: Tier 1 (Revenue-Critical), Tier 2 (Operational), Tier 3 (Edge/Compliance)",
+  "last_updated": "2026-05-04",
+  "summary": {
+    "total_tests": 243,
+    "tier_1_count": 48,
+    "tier_2_count": 127,
+    "tier_3_count": 68
+  },
+  "tiers": {
+    "tier_1_revenue_critical": {
+      "description": "Test daily. Failures stop revenue or break billing. 80% of business value.",
+      "test_frequency": "Daily automated execution",
+      "failure_impact": "Immediate revenue loss or billing dispute",
+      "tests": {
+        "gtpv1": {
+          "category": "Create PDP Context (Revenue Start)",
+          "cases": [
+            {
+              "id": "TC101",
+              "name": "create_success",
+              "business_impact": "Baseline revenue session establishment",
+              "cdr_validated": true,
+              "automation_priority": "P0"
+            },
+            {
+              "id": "TC115",
+              "name": "create_retransmission_success",
+              "business_impact": "Handles network retry without double-billing",
+              "cdr_validated": true,
+              "automation_priority": "P0"
+            },
+            {
+              "id": "TC155",
+              "name": "create_success_inter_cluster",
+              "business_impact": "Multi-cluster roaming revenue",
+              "cdr_validated": true,
+              "automation_priority": "P1"
+            },
+            {
+              "id": "TC117",
+              "name": "create_translated",
+              "business_impact": "NAT traversal for roaming partners",
+              "cdr_validated": true,
+              "automation_priority": "P1"
+            }
+          ]
+        },
+        "gtpv2": {
+          "category": "Create Session (Revenue Start)",
+          "cases": [
+            {
+              "id": "TC1201",
+              "name": "create_session_success",
+              "business_impact": "4G/5G baseline session establishment",
+              "cdr_validated": true,
+              "automation_priority": "P0"
+            },
+            {
+              "id": "TC1205",
+              "name": "create_session_inter_cluster",
+              "business_impact": "Multi-cluster 4G/5G roaming revenue",
+              "cdr_validated": true,
+              "automation_priority": "P1"
+            },
+            {
+              "id": "TC1241",
+              "name": "create_dedicated_bearer_success",
+              "business_impact": "QoS-based premium service revenue",
+              "cdr_validated": true,
+              "automation_priority": "P0"
+            }
+          ]
+        },
+        "gtpv1_delete": {
+          "category": "Delete PDP Context (Revenue Stop)",
+          "cases": [
+            {
+              "id": "TC301",
+              "name": "create_delete_success",
+              "business_impact": "Proper session termination with final CDR",
+              "cdr_validated": true,
+              "automation_priority": "P0"
+            }
+          ]
+        },
+        "gtpv2_delete": {
+          "category": "Delete Session/Bearer (Revenue Stop)",
+          "cases": [
+            {
+              "id": "TC1271",
+              "name": "delete_session_success",
+              "business_impact": "Proper 4G/5G session termination",
+              "cdr_validated": true,
+              "automation_priority": "P0"
+            },
+            {
+              "id": "TC1541",
+              "name": "delete_bearer_success",
+              "business_impact": "Dedicated bearer cleanup without killing main session",
+              "cdr_validated": true,
+              "automation_priority": "P1"
+            }
+          ]
+        },
+        "data_plane": {
+          "category": "GTP-U Data Plane (Actual Usage Billing)",
+          "cases": [
+            {
+              "id": "TC401",
+              "name": "create_uldl_data_delete",
+              "business_impact": "Data volume correctly passed to UPF for charging",
+              "cdr_validated": true,
+              "automation_priority": "P0"
+            }
+          ]
+        },
+        "handover": {
+          "category": "Handover (Revenue Continuity)",
+          "cases": [
+            {
+              "id": "TC1258",
+              "name": "modify_bearer_handover_3G_to_4G_success",
+              "business_impact": "Subscriber stays connected during RAT change - no revenue interruption",
+              "cdr_validated": true,
+              "automation_priority": "P0"
+            }
+          ]
+        }
+      }
+    },
+    "tier_2_operational": {
+      "description": "Test weekly. Prevent revenue leakage and operational issues.",
+      "test_frequency": "Weekly automated execution",
+      "failure_impact": "Revenue leakage or customer experience degradation",
+      "tests": {
+        "update_pdp": {
+          "category": "Update PDP Context (GTPv1)",
+          "count": 17,
+          "business_value": "Session modification without dropping revenue stream",
+          "key_cases": ["TC201", "TC205", "TC251"]
+        },
+        "modify_bearer": {
+          "category": "Modify Bearer (GTPv2)",
+          "count": 24,
+          "business_value": "eNB change, TAU, graceful mobility",
+          "key_cases": ["TC1301", "TC1305", "TC1355"]
+        },
+        "update_bearer": {
+          "category": "Update Bearer (GTPv2 QoS Changes)",
+          "count": 18,
+          "business_value": "QoS tier upgrades/downgrades",
+          "key_cases": ["TC1501", "TC1505"]
+        },
+        "multi_bearer": {
+          "category": "Multi-Bearer Scenarios",
+          "count": 3,
+          "business_value": "Complex enterprise/M2M scenarios",
+          "key_cases": ["TC1561", "TC1562", "TC1563"]
+        },
+        "inter_cluster": {
+          "category": "Inter-Cluster Routing",
+          "count": 35,
+          "business_value": "Multi-datacenter resilience and geo-routing",
+          "coverage": "Mixed across all message types"
+        },
+        "resume_suspend": {
+          "category": "Resume/Suspend Notifications",
+          "count": 12,
+          "business_value": "MME load balancing and power saving",
+          "key_cases": ["TC1701", "TC1721"]
+        }
+      }
+    },
+    "tier_3_edge_compliance": {
+      "description": "Test on code change. Security, compliance, error handling.",
+      "test_frequency": "On code change or quarterly",
+      "failure_impact": "Security risk, compliance violation, or audit failure",
+      "tests": {
+        "rejection_scenarios": {
+          "category": "Create Rejection (Fraud Prevention)",
+          "count": 11,
+          "compliance_value": "GSMA IR.88 security requirements",
+          "cases": [
+            "TC102_unk_vpmn",
+            "TC103_unk_imsi",
+            "TC106_barred_imsi",
+            "TC107_barred_apn",
+            "TC108_barred_imei"
+          ],
+          "so_what": "If barred IMSI creates session = fraud liability"
+        },
+        "error_handling": {
+          "category": "Unknown Context/Cluster Errors",
+          "count": 28,
+          "resilience_value": "DRF state recovery after crash/partition",
+          "cases": ["TC202_unk_ctxt", "TC203_ip_mismatch", "TC157_timeout"]
+        },
+        "malformed_packets": {
+          "category": "Malformed/Malicious Packet Handling",
+          "count": 12,
+          "security_value": "Resilience against fuzzing attacks",
+          "cases": ["TC113_malformed", "TCXXX_malformated_modify"]
+        },
+        "timeout_recovery": {
+          "category": "Timeout and Retransmission",
+          "count": 8,
+          "reliability_value": "Graceful handling of HPMN unreachability",
+          "cases": ["TC157", "TC217", "TC317"]
+        },
+        "trace_session": {
+          "category": "Trace Session Management",
+          "count": 12,
+          "compliance_value": "Lawful intercept and debugging",
+          "cases": ["TC1661", "TC1671"]
+        },
+        "not_defined": {
+          "category": "Placeholder Tests (Excel Status = NOT DEFINED)",
+          "count": 68,
+          "action": "Define coverage gaps or mark as N/A",
+          "risk": "Undiscovered bugs in undefined scenarios"
+        }
+      }
+    }
+  },
+  "instrument_mapping": {
+    "evolver": {
+      "role": "Active protocol testing - executes all YAML scenarios",
+      "tier_coverage": "All tiers",
+      "value_proposition": "Prove DRF transforms GTP correctly before deployment",
+      "automation_readiness": "YAML files ready for batch execution"
+    },
+    "nscan": {
+      "role": "Passive traffic validation - captures live DRF traffic",
+      "tier_coverage": "Tier 1 + critical Tier 2",
+      "value_proposition": "Prove real subscriber traffic transforms correctly in production",
+      "focus": "TEID aliasing verification, CDR correlation"
+    },
+    "ants": {
+      "role": "End-to-end field validation from roaming locations",
+      "tier_coverage": "Tier 1 only",
+      "value_proposition": "Prove roaming works for real subscribers in target markets",
+      "deployment_context": "Senegal and other field locations"
+    }
+  },
+  "key_metrics": {
+    "drf_health_score": {
+      "formula": "(Tier_1_Pass / Tier_1_Total) * 40 + (Tier_2_Pass / Tier_2_Total) * 35 + (Tier_3_Pass / Tier_3_Total) * 25",
+      "target": ">= 95",
+      "calculation_frequency": "Hourly"
+    },
+    "revenue_at_risk": {
+      "formula": "Count of Tier_1 failures * average_session_value",
+      "alert_threshold": "> 0"
+    },
+    "cdr_completeness": {
+      "formula": "CDRs_generated / Sessions_created",
+      "target": "= 1.00",
+      "verified_by": "Evolver CDR assertions + nScan capture + ANTS field"
+    }
+  }
+}

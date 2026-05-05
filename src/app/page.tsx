@@ -214,6 +214,7 @@ export default function Home() {
           <span>Observe. Resolve. Automate. — Framework by Vugar Aliyev</span>
           <div className="flex gap-4">
             <Link href="/functions" className="hover:text-[var(--foreground)]">Functions</Link>
+            <Link href="/architecture" className="hover:text-[var(--foreground)]">Architecture</Link>
             <Link href="/use-cases" className="hover:text-[var(--foreground)]">Use Cases</Link>
             <Link href="/laws" className="hover:text-[var(--foreground)]">Laws</Link>
             <Link href="/tools" className="hover:text-[var(--foreground)]">Tools</Link>

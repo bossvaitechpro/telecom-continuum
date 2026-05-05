@@ -6,7 +6,8 @@ import { allUseCases, allLaws, allFunctions, getLawById, getFunctionById, getToo
 import { UseCaseCard } from "@/components/UseCaseCard";
 import { Badge } from "@/components/ui/Badge";
 import { toRoman } from "@/lib/utils";
-import { Search, X } from "lucide-react";
+import { Search, X, ArrowRight, Activity } from "lucide-react";
+import Link from "next/link";
 
 export default function UseCasesPage() {
   const searchParams = useSearchParams();
@@ -65,6 +66,35 @@ export default function UseCasesPage() {
           {filtered.length} of {allUseCases.length} use cases
         </p>
       </div>
+
+      {/* Featured: DRF Observability */}
+      <Link href="/use-cases/drf-observability" className="block mb-8 group">
+        <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-slate-700 p-6 transition-all hover:shadow-lg hover:border-slate-600">
+          <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 to-transparent" />
+          <div className="relative flex items-start gap-4">
+            <div className="p-3 bg-emerald-500/20 rounded-lg">
+              <Activity className="w-6 h-6 text-emerald-400" />
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-xs font-semibold text-emerald-400 uppercase tracking-wide">Featured Use Case</span>
+              </div>
+              <h2 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
+                DRF Observability
+              </h2>
+              <p className="text-slate-300 text-sm mb-3 max-w-2xl">
+                Strategic framework for testing and monitoring the Data Roaming Function (DRF) — 
+                a GTP proxy that processes billable roaming transactions. Features 243 test cases 
+                categorized by revenue risk across Evolver, nScan, and ANTS.
+              </p>
+              <div className="flex items-center gap-2 text-emerald-400 text-sm font-semibold">
+                <span>Explore framework</span>
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Link>
 
       {/* Filter bar */}
       <div className="rounded-xl border border-[var(--card-border)] bg-[var(--card)] p-4 mb-8 space-y-4">
