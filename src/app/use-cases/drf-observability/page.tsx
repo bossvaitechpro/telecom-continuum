@@ -392,6 +392,61 @@ export default function DRFObservabilityPage() {
         </div>
       </section>
 
+      {/* ── ARIAM & QoS Framework Bridge ── */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 border-t border-[var(--card-border)]">
+        <p className="text-xs font-mono text-brand-gold uppercase tracking-widest mb-2">Industry Standards Alignment</p>
+        <h2 className="text-2xl font-serif text-[var(--foreground)] mb-2">Four Proofs × ARIAM QoS Framework</h2>
+        <p className="text-sm text-[var(--muted)] mb-8 max-w-3xl">
+          Revenue assurance and network performance are two views of the same system.
+          The Four Proofs provide evidence; ARIAM metrics provide performance context.
+          Together they satisfy both CFO audits and CTO engineering reviews.
+        </p>
+
+        <div className="grid lg:grid-cols-2 gap-6">
+          {/* Four Proofs to ARIAM Mapping */}
+          <div className="rounded-2xl border border-[var(--card-border)] bg-[var(--card)] p-6">
+            <h3 className="text-sm font-semibold text-[var(--foreground)] mb-4">How Revenue Proofs Map to QoS Metrics</h3>
+            <div className="space-y-3">
+              {[
+                { proof: 'Transit', ariam: 'Accessibility', meaning: 'GTP messages reach destination; network path available' },
+                { proof: 'Transformation', ariam: 'Integrity', meaning: 'TEID aliasing correct; protocol processing accurate' },
+                { proof: 'Persistence', ariam: 'Retainability + Maintainability', meaning: 'CDRs retained for billing; audit trail complete' },
+                { proof: 'Compliance', ariam: 'Integrity + Security', meaning: 'GSMA IR.88 followed; rejection handling per spec' },
+              ].map((row, i) => (
+                <div key={row.proof} className="flex items-center gap-3 text-xs">
+                  <div className="w-24 font-medium text-[var(--foreground)]">{row.proof}</div>
+                  <div className="text-[var(--muted)]">→</div>
+                  <div className="w-24 font-medium text-brand-blue">{row.ariam}</div>
+                  <div className="flex-1 text-[var(--muted)]">{row.meaning}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Why Both Matter */}
+          <div className="rounded-2xl border border-[var(--card-border)] bg-[var(--card)] p-6">
+            <h3 className="text-sm font-semibold text-[var(--foreground)] mb-4">Why ARIAM Alone Is Insufficient</h3>
+            <div className="space-y-3 text-xs text-[var(--muted)]">
+              <p><strong className="text-[var(--foreground)]">Scenario:</strong> DRF shows 99.99% availability (ARIAM green). All sessions complete.</p>
+              <p><strong className="text-[var(--foreground)]">Problem:</strong> 2% of CDRs are missing due to race condition in CDRF write.</p>
+              <p><strong className="text-[var(--foreground)]">ARIAM result:</strong> System healthy. No alerts.</p>
+              <p><strong className="text-brand-gold">Four Proofs result:</strong> Persistence proof fails. CDR Completeness = 0.98. Revenue at Risk calculated.</p>
+              <div className="mt-4 pt-4 border-t border-[var(--card-border)]">
+                <p className="text-[var(--foreground)] font-medium">The takeaway:</p>
+                <p>ARIAM tells you the network works. Four Proofs tell you the money is captured. Both are necessary; neither is sufficient alone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Standards Compliance Footer */}
+        <div className="mt-6 flex flex-wrap gap-3 text-xs">
+          {['ETSI NFV TST009', 'GSMA IR.88', 'TM Forum RA', 'ITU-T E.800', '3GPP TS 32.240'].map(std => (
+            <span key={std} className="px-3 py-1 rounded-full border border-[var(--card-border)] text-[var(--muted)]">{std}</span>
+          ))}
+        </div>
+      </section>
+
       {/* ── Risk-Based Test Pyramid ── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <p className="text-xs font-mono text-brand-gold uppercase tracking-widest mb-2">Test Strategy</p>
