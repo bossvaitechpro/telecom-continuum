@@ -412,7 +412,7 @@ export default function DRFObservabilityPage() {
                 { proof: 'Transformation', ariam: 'Integrity', meaning: 'TEID aliasing correct; protocol processing accurate' },
                 { proof: 'Persistence', ariam: 'Retainability + Maintainability', meaning: 'CDRs retained for billing; audit trail complete' },
                 { proof: 'Compliance', ariam: 'Integrity + Security', meaning: 'GSMA IR.88 followed; rejection handling per spec' },
-              ].map((row, i) => (
+              ].map((row) => (
                 <div key={row.proof} className="flex items-center gap-3 text-xs">
                   <div className="w-24 font-medium text-[var(--foreground)]">{row.proof}</div>
                   <div className="text-[var(--muted)]">→</div>
@@ -591,8 +591,8 @@ export default function DRFObservabilityPage() {
                   { e: true,  a: true,  n: false, verdict: 'CDR leakage — sessions succeed but billing records are missing' },
                   { e: false, a: false, n: true,  verdict: 'DRF down — both active instruments fail, traffic tapped but not processed' },
                   { e: false, a: false, n: false, verdict: 'Full DRF outage — all layers impacted, zero roaming sessions completing' },
-                ].map((row, i) => (
-                  <tr key={i} className="border-b border-[var(--card-border)] last:border-b-0 hover:bg-[var(--muted-bg)] transition-colors">
+                ].map((row) => (
+                  <tr key={row.verdict.slice(0, 20)} className="border-b border-[var(--card-border)] last:border-b-0 hover:bg-[var(--muted-bg)] transition-colors">
                     <td className="px-4 py-3 text-center">
                       {row.e ? <CheckCircle2 className="w-4 h-4 text-emerald-500 inline" /> : <XCircle className="w-4 h-4 text-red-500 inline" />}
                     </td>
