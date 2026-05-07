@@ -1,17 +1,25 @@
 {
-  "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "outputDirectory": "dist",
-  "rewrites": [
-    { "source": "/training", "destination": "/training.html" },
-    { "source": "/functions", "destination": "/functions.html" },
-    { "source": "/laws", "destination": "/laws.html" },
-    { "source": "/tools", "destination": "/tools.html" },
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/architecture", "destination": "/architecture.html" },
-    { "source": "/use-cases", "destination": "/use-cases.html" }
+  "version": 2,
+  "public": true,
+  "github": {
+    "enabled": false
+  },
+  "builds": [
+    {
+      "src": "dist/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/training", "dest": "/training.html" },
+    { "src": "/functions", "dest": "/functions.html" },
+    { "src": "/laws", "dest": "/laws.html" },
+    { "src": "/tools", "dest": "/tools.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/architecture", "dest": "/architecture.html" },
+    { "src": "/use-cases", "dest": "/use-cases.html" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/$1.html" }
   ],
   "redirects": [
     {
