@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Ffunctions\u002F[slug]","\u002Flaws\u002F[slug]","\u002Ftools\u002F[slug]","\u002Fuse-cases\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
