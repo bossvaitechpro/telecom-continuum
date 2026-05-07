@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/use-cases', label: 'Use Cases' },
   { href: '/laws', label: 'Laws' },
   { href: '/tools', label: 'Tools' },
+  { href: '/training', label: 'Training' },
   { href: '/about', label: 'About' },
 ];
 
